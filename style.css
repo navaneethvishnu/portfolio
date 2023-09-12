@@ -98,6 +98,75 @@ html > body {
 }
 /* intro section end */
 
+/* skill and education start */
+.skill-education {
+  margin-top: 30px;
+}
+.skill > h2 {
+  color: #fff;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.all-skills {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.all-logo {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+}
+.all-percent {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 50px;
+  margin-left: 25px;
+}
+.known {
+  height: 34px;
+  border-radius: 50px;
+  margin-left: 3.5px;
+}
+.html {
+  width: 80%;
+  background-color: #ec452a;
+}
+.css {
+  width: 60%;
+  background-color: #2947f0;
+}
+.js {
+  width: 20%;
+  background-color: #feeb31;
+}
+.education > h2 {
+  color: #fff;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.education > p {
+  color: #fff;
+  text-align: justify;
+  font-family: "Lexend", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+/* skill and edducation end */
+
 /* CSS for small devices (phones) */
 @media (max-width: 767px) {
   .hero-image > img {
