@@ -17,24 +17,27 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header start -->
-    <div class="container header">
-      <div class="row">
-        <div class="logo col-12 col-lg-6">
-          <img src="./images/Screenshot_2023-09-04_115557-removebg 1.png" alt="logo" />
-        </div>
-        <div class="menu col-12 col-lg-6">
-          <ul>
-            <li><a href="">RESUME</a></li>
-            <li><a href="">SHOWCASE</a></li>
-            <li><a href="">ABOUT ME</a></li>
-            <li><a href="">CONTACT ME</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <header class="header">
+      <a href="" class="logo">Logo</a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <nav class="navbar-box">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Gallery</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
     <!-- header end -->
 
     <!-- hero section start -->
