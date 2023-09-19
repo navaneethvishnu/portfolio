@@ -266,6 +266,34 @@ html > body {
   border-radius: 15px;
 }
 
+/* about me section */
+
+.about-me {
+  margin-top: 30px;
+}
+.about-me > h2 {
+  color: #fff;
+  font-family: "Lexend Exa", sans-serif;
+  font-style: normal;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: normal;
+}
+.about-me-text > p {
+  color: #fff;
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+}
+.about-me > .inner-about-me {
+  margin-top: 25px;
+}
+.about-me-text,
+.about-me-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* media query */
 @media (max-width: 767px) {
   .hero-image > img {
@@ -315,6 +343,14 @@ html > body {
   .projects {
     margin-bottom: 25px;
   }
+  .about-me > .inner-about-me > .about-me-image {
+    order: 1;
+    margin-bottom: 25px;
+  }
+  .about-me > .inner-about-me > .about-me-text {
+    order: 2;
+    font-size: 18px;
+  }
 }
 
 /* CSS for larger devices (tablets and desktops) */
@@ -358,6 +394,14 @@ html > body {
   .projects {
     margin-bottom: 25px;
   }
+  .about-me > .inner-about-me > .about-me-image {
+    order: 1;
+    margin-bottom: 25px;
+  }
+  .about-me > .inner-about-me > .about-me-text {
+    order: 2;
+    font-size: 19px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -382,6 +426,9 @@ html > body {
   .intro-text > p {
     font-size: 20px;
   }
+  .about-me > .inner-about-me > .about-me-text {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -404,6 +451,9 @@ html > body {
     font-size: 27px;
   }
   .intro-text > p {
+    font-size: 21px;
+  }
+  .about-me > .inner-about-me > .about-me-text {
     font-size: 21px;
   }
 }
