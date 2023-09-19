@@ -107,7 +107,6 @@ html > body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 15px;
 }
 .all-text {
   color: #fff;
@@ -154,7 +153,6 @@ html > body {
 .inner-intro > .intro-text {
   display: flex;
   align-items: center;
-  margin-top: 25px;
 }
 .intro-text > p {
   color: #fff;
@@ -219,9 +217,6 @@ html > body {
   width: 20%;
   background-color: #feeb31;
 }
-.inner-skill-education > .education {
-  margin-top: 25px;
-}
 .education > h2 {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
@@ -265,6 +260,9 @@ html > body {
   .all-text > .third-text > h2 {
     font-size: 17px;
   }
+  .inner-hero > .hero-text {
+    margin-top: 15px;
+  }
   .hero > .inner-hero > .hero-image {
     order: 1;
   }
@@ -277,6 +275,12 @@ html > body {
   }
   .intro-text > p {
     font-size: 18px;
+  }
+  .inner-intro > .intro-text {
+    margin-top: 25px;
+  }
+  .inner-skill-education > .education {
+    margin-top: 25px;
   }
 }
 
@@ -300,6 +304,9 @@ html > body {
   .all-text > .third-text > h2 {
     font-size: 27px;
   }
+  .inner-hero > .hero-text {
+    margin-top: 15px;
+  }
   .hero > .inner-hero > .hero-image {
     order: 1;
   }
@@ -308,6 +315,12 @@ html > body {
   }
   .intro-text > p {
     font-size: 19px;
+  }
+  .inner-intro > .intro-text {
+    margin-top: 25px;
+  }
+  .inner-skill-education > .education {
+    margin-top: 25px;
   }
 }
 
