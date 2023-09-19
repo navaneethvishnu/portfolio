@@ -157,6 +157,7 @@ html > body {
 .intro-text > p {
   color: #fff;
   font-family: "Lexend", sans-serif;
+  margin-bottom: 0;
 }
 .third-shade {
   position: absolute;
