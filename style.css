@@ -1,30 +1,42 @@
-html > body {
-  background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend&family=Lexend+Exa:wght@500&display=swap");
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* header start */
+html > body {
+  background: black;
+}
+/* navbar section start */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(50px);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
-.logo {
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+.logo img {
+  width: 50px;
 }
 .navbar-box a {
-  font-size: 1.15rem;
+  font-size: 1.08rem;
+  font-family: "Inter", sans-serif;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -41,16 +53,61 @@ html > body {
   display: none;
   right: 5%;
 }
-/* header end */
+@media (max-width: 922px) {
+  .header {
+    padding: 1.3rem 5%;
+  }
+}
+@media (max-width: 768px) {
+  .icons {
+    display: inline-flex;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  .icons #close-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  .navbar-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  #check:checked ~ .navbar-box {
+    height: 17.5rem;
+  }
+  .navbar-box a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: 0.3s ease;
+  }
+  #check:checked ~ .navbar-box a {
+    transform: translateY(0);
+  }
+}
 
-/* hero section start */
+/* hero section */
+
 .hero {
   margin-top: 100px;
 }
-.hero-text {
+.inner-hero > .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 15px;
 }
 .all-text {
   color: #fff;
@@ -82,9 +139,9 @@ html > body {
   justify-content: center;
   align-items: center;
 }
-/* hero section end */
 
-/* intro section start */
+/* intro section */
+
 .intro {
   margin-top: 30px;
 }
@@ -94,12 +151,14 @@ html > body {
   justify-content: center;
   align-items: center;
 }
+.inner-intro > .intro-text {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
 .intro-text > p {
   color: #fff;
   font-family: "Lexend", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 .third-shade {
   position: absolute;
@@ -109,17 +168,17 @@ html > body {
   background-color: #2947f0;
   filter: blur(200px);
 }
-/* intro section end */
 
 /* skill and education start */
+
 .skill-education {
   margin-top: 30px;
 }
 .skill > h2 {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
-  font-size: 50px;
   font-style: normal;
+  font-size: 48px;
   font-weight: 500;
   line-height: normal;
 }
@@ -160,11 +219,14 @@ html > body {
   width: 20%;
   background-color: #feeb31;
 }
+.inner-skill-education > .education {
+  margin-top: 25px;
+}
 .education > h2 {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
-  font-size: 50px;
   font-style: normal;
+  font-size: 48px;
   font-weight: 500;
   line-height: normal;
 }
@@ -172,15 +234,14 @@ html > body {
   color: #fff;
   text-align: justify;
   font-family: "Lexend", sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-top: 30px;
 }
-/* skill and edducation end */
 
-/* CSS for small devices (phones) */
+/* media query */
 @media (max-width: 767px) {
   .hero-image > img {
     width: 100%;
@@ -195,17 +256,14 @@ html > body {
     border-radius: 500px;
     filter: blur(250px);
   }
-  .hero > .inner-hero > .hero-text {
-    margin-top: 15px;
-  }
   .all-text > .first-text > h2 {
-    font-size: 16.25px;
+    font-size: 17px;
   }
   .all-text > .second-text > h1 {
-    font-size: 52px;
+    font-size: 49px;
   }
   .all-text > .third-text > h2 {
-    font-size: 16.25px;
+    font-size: 17px;
   }
   .hero > .inner-hero > .hero-image {
     order: 1;
@@ -213,15 +271,12 @@ html > body {
   .hero > .inner-hero > .hero-text {
     order: 2;
   }
-  .intro > .inner-intro > .intro-text {
-    margin-top: 20px;
-  }
   .intro-image > img {
     width: 100%;
     height: auto;
   }
   .intro-text > p {
-    font-size: 16.25px;
+    font-size: 18px;
   }
 }
 
@@ -236,17 +291,14 @@ html > body {
     border-radius: 500px;
     filter: blur(250px);
   }
-  .hero > .inner-hero > .hero-text {
-    margin-top: 15px;
-  }
   .all-text > .first-text > h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
   .all-text > .second-text > h1 {
     font-size: 80px;
   }
   .all-text > .third-text > h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
   .hero > .inner-hero > .hero-image {
     order: 1;
@@ -254,11 +306,8 @@ html > body {
   .hero > .inner-hero > .hero-text {
     order: 2;
   }
-  .intro > .inner-intro > .intro-text {
-    margin-top: 20px;
-  }
   .intro-text > p {
-    font-size: 25px;
+    font-size: 19px;
   }
 }
 
@@ -273,18 +322,19 @@ html > body {
     filter: blur(250px);
   }
   .all-text > .first-text > h2 {
-    font-size: 22.5px;
+    font-size: 23px;
   }
   .all-text > .second-text > h1 {
-    font-size: 72px;
+    font-size: 66px;
   }
   .all-text > .third-text > h2 {
-    font-size: 22.5px;
+    font-size: 23px;
   }
   .intro-text > p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
+
 @media (min-width: 1200px) {
   .second-shade {
     position: absolute;
@@ -296,60 +346,15 @@ html > body {
     filter: blur(250px);
   }
   .all-text > .first-text > h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
   .all-text > .second-text > h1 {
     font-size: 80px;
   }
   .all-text > .third-text > h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
   .intro-text > p {
-    font-size: 25px;
-  }
-}
-/* navbar-breakpoint */
-@media (max-width: 922px) {
-  .header {
-    padding: 1.3rem 5%;
-  }
-}
-
-@media (max-width: 768px) {
-  .icons {
-    display: inline-flex;
-  }
-  #check:checked ~ .icons #menu-icon {
-    display: none;
-  }
-  .icons #close-icon {
-    display: none;
-  }
-  #check:checked ~ .icons #close-icon {
-    display: block;
-  }
-  .navbar-box {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: rgba(0, 0, 0, 0.9);
-    overflow: hidden;
-    transition: 0.3s ease;
-  }
-  #check:checked ~ .navbar-box {
-    height: 17.7rem;
-  }
-  .navbar-box a {
-    display: block;
-    font-size: 1.1rem;
-    margin: 1.5rem 0;
-    text-align: center;
-    transform: translateY(-50px);
-    transition: 0.3s ease;
-  }
-  #check:checked ~ .navbar-box a {
-    transform: translateY(0);
+    font-size: 21px;
   }
 }
