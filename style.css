@@ -294,6 +294,28 @@ html > body {
   justify-content: center;
 }
 
+/* contact me  section */
+
+.contact-me {
+  margin-top: 30px;
+}
+.contact-me > h2 {
+  color: #fff;
+  font-family: "Lexend Exa", sans-serif;
+  font-style: normal;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact-me > .inner-contact-me {
+  margin-top: 25px;
+}
+.address,
+.mail-phone {
+  color: #fff;
+  font-family: "Lexend", sans-serif;
+}
+
 /* media query */
 @media (max-width: 767px) {
   .hero-image > img {
@@ -351,6 +373,10 @@ html > body {
     order: 2;
     font-size: 18px;
   }
+  .address,
+  .mail-phone {
+    font-size: 18px;
+  }
 }
 
 /* CSS for larger devices (tablets and desktops) */
@@ -402,6 +428,10 @@ html > body {
     order: 2;
     font-size: 19px;
   }
+  .address,
+  .mail-phone {
+    font-size: 19px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -429,6 +459,10 @@ html > body {
   .about-me > .inner-about-me > .about-me-text {
     font-size: 20px;
   }
+  .address,
+  .mail-phone {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -454,6 +488,10 @@ html > body {
     font-size: 21px;
   }
   .about-me > .inner-about-me > .about-me-text {
+    font-size: 21px;
+  }
+  .address,
+  .mail-phone {
     font-size: 21px;
   }
 }
