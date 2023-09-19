@@ -7,7 +7,7 @@
 html > body {
   background: black;
 }
-/* navbar section start */
+/* navbar section */
 .header {
   position: fixed;
   top: 0;
@@ -168,7 +168,7 @@ html > body {
   filter: blur(200px);
 }
 
-/* skill and education start */
+/* skill and education */
 
 .skill-education {
   margin-top: 30px;
@@ -237,6 +237,35 @@ html > body {
   margin-top: 30px;
 }
 
+/* project section */
+
+.project > h2 {
+  color: #fff;
+  font-family: "Lexend Exa", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+}
+.project {
+  margin-top: 30px;
+}
+.project > .inner-project {
+  margin-top: 30px;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+}
+.project-one,
+.project-two,
+.project-three {
+  background-color: #fff;
+  width: 302px;
+  height: 418px;
+  border-radius: 15px;
+}
+
 /* media query */
 @media (max-width: 767px) {
   .hero-image > img {
@@ -283,6 +312,9 @@ html > body {
   .inner-skill-education > .education {
     margin-top: 25px;
   }
+  .projects {
+    margin-bottom: 25px;
+  }
 }
 
 /* CSS for larger devices (tablets and desktops) */
@@ -322,6 +354,9 @@ html > body {
   }
   .inner-skill-education > .education {
     margin-top: 25px;
+  }
+  .projects {
+    margin-bottom: 25px;
   }
 }
 
