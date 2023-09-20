@@ -177,7 +177,7 @@ html > body {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
   font-style: normal;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 500;
   line-height: normal;
 }
@@ -199,7 +199,7 @@ html > body {
   flex-shrink: 0;
   background-color: #fff;
   border-radius: 50px;
-  margin-left: 25px;
+  margin-left: 7px;
 }
 .known {
   height: 34px;
@@ -222,7 +222,7 @@ html > body {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
   font-style: normal;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 500;
   line-height: normal;
 }
@@ -230,7 +230,7 @@ html > body {
   color: #fff;
   text-align: justify;
   font-family: "Lexend", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -243,7 +243,7 @@ html > body {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
   font-style: normal;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 500;
   line-height: normal;
 }
@@ -275,7 +275,7 @@ html > body {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
   font-style: normal;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 500;
   line-height: normal;
 }
@@ -314,7 +314,7 @@ html > body {
   color: #fff;
   font-family: "Lexend Exa", sans-serif;
   font-style: normal;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 500;
   line-height: normal;
 }
@@ -346,7 +346,7 @@ html > body {
     font-size: 17px;
   }
   .all-text > .second-text > h1 {
-    font-size: 49px;
+    font-size: 43px;
   }
   .all-text > .third-text > h2 {
     font-size: 17px;
